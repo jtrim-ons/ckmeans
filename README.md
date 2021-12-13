@@ -22,7 +22,7 @@ where the 3 on the first line is the number of clusters to create, and the remai
 
 ## Tests
 
-I haven't added unit tests yet.  The `compare-to-*` directories provide Python and JS scripts with the same interface that should give the same results.  the `compare-to-simple-statistics` has a script to create a random dataset.
+I haven't added unit tests yet.  The `compare-to-*` directories provide Python and JS scripts with the same interface that should give the same results.  The `compare-to-simple-statistics` directory has a script to create a random dataset.
 
 ## Doubts
 
