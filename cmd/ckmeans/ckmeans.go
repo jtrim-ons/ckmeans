@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/jtrim-ons/ckmeans/pkg/ckmeans"
 	"fmt"
+	"github.com/jtrim-ons/ckmeans/pkg/ckmeans"
 	"io"
 	"os"
 )
@@ -22,20 +22,20 @@ func main() {
 			os.Exit(1)
 		}
 		if nClusters == -1 {
-		    nClusters = int(val)
-        } else {
-            vals = append(vals, val)
-        }
+			nClusters = int(val)
+		} else {
+			vals = append(vals, val)
+		}
 	}
 
-    clusters, err := ckmeans.Ckmeans(vals, nClusters)
-    if err != nil {
-        fmt.Println(err)
-        os.Exit(1)
-    }
-    for i, cluster := range clusters {
-        for _, val := range cluster {
-            fmt.Println(i, val)
-        }
-    }
+	clusters, err := ckmeans.Ckmeans(vals, nClusters)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	for i, cluster := range clusters {
+		for _, val := range cluster {
+			fmt.Println(i, val)
+		}
+	}
 }
