@@ -38,7 +38,7 @@ func TestCkmeans(t *testing.T) {
 	testCases := []testCase{
 		{[]float64{1}, 1, [][]float64{{1}}},
 		{[]float64{1, 1, 1, 1}, 1, [][]float64{{1, 1, 1, 1}}},
-		{[]float64{1, 1, 1, 1}, 4, [][]float64{{1, 1, 1, 1}}}, // return one cluster for consistnecy with Simple Statistics
+		{[]float64{1, 1, 1, 1}, 4, [][]float64{{1, 1, 1, 1}}}, // return one cluster for consistency with Simple Statistics
 		{[]float64{-1, 2, -1, 2, 4, 5, 6, -1, 2, -1}, 3, [][]float64{
 			{-1, -1, -1, -1}, {2, 2, 2}, {4, 5, 6}}},
 		{[]float64{1, 1, 1, 1}, 1, [][]float64{{1, 1, 1, 1}}},
